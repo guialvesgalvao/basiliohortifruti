@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basílio Hortifruti</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/650a241ee6.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!--========CABEÇALHO========-->
+
+    <header class="cabecalho">
+        <a href="index.html">
+            <h1 class="logo"> Basílio Hortifruti</h1>
+        </a>
+        <button class="btn-menu"><i class="fas fa-bars fa-lg"></i></button>
+        <nav class="menu">
+            <a class="btn-close"><i class="fa fa-times"></i></a>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Clientes</a></li>
+                <li><a href="#">Serviços</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Quem Somos</a></li>
+                <li><a href="#">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!--==========FOTO COM BOTÕES ==============-->
+
+    <div class="banner">
+        <div class="title">
+            <h2>FRUTAS DA MELHOR QUALIDADE</h2>
+            <h3>Conte conosco para levar somente frutas da melhor qualidade para sua casa! </h3>
+        </div>
+        <div class="buttons">
+            <button class="btn-cadastrar"> Comprar <i class="fa fa-arrow-circle-right"> </i> </button>
+            <button class="btn-sobre"> Sobre <i class="fa fa-question-circle"> </i> </button>
+        </div>
+    </div>
+
+    <!--=========SERVIÇOS================-->
+
+    <main class="servicos">
+        <article class="servico">
+            <a href="#"><img src="img2/criacoes.jpg" alt="Bananeiras"></a>
+            <div class="inner">
+                <a href="#">Origem</a>
+                <h4>Bananeiras - PB</h4>
+                <p>Nossas bananas são de origem da cidade das bananas mais conhecida do Brasil! Bananeiras fica localizado na Paraíba e possue a maior qualidade de bananas do país!</p>
+            </div>
+        </article>
+        <article class="servico ">
+            <a href="#"><img src="img2/md.jpg" alt="Fachada da hortifruti"></a>
+            <div class="inner">
+                <a href="#">Nossa Loja</a>
+                <h4>Lagoa Salgada - RN</h4>
+                <p>Nossa hortifruti fica localizada em frente a praça principal, no centro de Lagoa Salgada, mas não se esqueça que também fazemos entregas! Que tal fazer agora o seu pedido? </p>
+            </div>
+        </article>
+        <article class="servico">
+            <a href="#"><img src="img2/cs.jpg" alt="Delivery"></a>
+            <div class="inner">
+                <a href="#">Delivery</a>
+                <h4>Entregas para Supermercados e Famílias</h4>
+                <p>Fazemos entregas para supermercados de todas as cidades próximas e também entregamos à domicílio nas cidades e municípios de Lagoa de Pedras e Lagoa Salgada.</p>
+            </div>
+        </article>
+    </main>
+
+    <!--==============NEWSLETTER===============-->
+
+    <section class="newsletter">
+        <div class="newslettertexto">
+            <h2> Deixe Conosco! </h2>
+            <h3> Entraremos em contato com você! </h3>
+        </div>
+        <div class="newslettercampo">
+            <form>
+                <input type="tel" name="number" placeholder="Digite seu número do Whatsapp">
+                <button> Cadastrar </button>
+            </form>
+        </div>
+    </section>
+    <!--RODAPÉ-->
+    <footer class="rodape">
+        <div class="social-icons">
+            <a href="#"><i class="fa fa-facebook"></i></a>
+            <a href="#"><i class="fa fa-twitter"></i></a>
+            <a href="#"><i class="fa fa-google"></i></a>
+            <a href="#"><i class="fa fa-instagram"></i></a>
+            <a href="#"><i class="fa fa-envelope"></i></a>
+        </div>
+        <p class="copyright"> Copyright © Basílio Hortifruti Todos os direitos Reservados. </p>
+
+    </footer>
+    <!--JQUERY-->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script>
+        $(".btn-menu").click(function(){
+            $(".menu").show();
+        });
+        $(".btn-close").click(function(){
+            $(".menu").hide();
+        });
+    </script>
+</body>
+</html>
